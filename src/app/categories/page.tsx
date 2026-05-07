@@ -78,7 +78,13 @@ export default function CategoriesPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredCategories.length > 0 ? (
             filteredCategories.map((category) => (
-              <div key={category.id} className="bg-white dark:bg-zinc-900 p-8 rounded-[2.5rem] shadow-sm border border-zinc-100 dark:border-zinc-800 hover:shadow-xl hover:-translate-y-1 transition-all group cursor-pointer">
+              <a
+                key={category.id}
+                href="https://app.kairosng.com/auth/login"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white dark:bg-zinc-900 p-8 rounded-[2.5rem] shadow-sm border border-zinc-100 dark:border-zinc-800 hover:shadow-xl hover:-translate-y-1 transition-all group block"
+              >
                 <div className="flex justify-between items-start mb-6">
                   <div className="w-14 h-14 bg-pink-50 dark:bg-pink-900/10 rounded-2xl flex items-center justify-center group-hover:bg-[#C2185B] transition-colors">
                     <category.icon className="w-7 h-7 text-[#C2185B] group-hover:text-white transition-colors" />
@@ -91,11 +97,11 @@ export default function CategoriesPage() {
                 <p className="text-zinc-500 dark:text-zinc-400 mb-8 leading-relaxed">{category.desc}</p>
                 <div className="flex justify-between items-center mt-auto pt-6 border-t border-zinc-50 dark:border-zinc-800">
                   <span className="text-xs font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-widest">{category.count}</span>
-                  <button className="flex items-center gap-2 text-[#C2185B] font-bold text-sm hover:gap-3 transition-all">
+                  <span className="flex items-center gap-2 text-[#C2185B] font-bold text-sm group-hover:gap-3 transition-all">
                     Hire talent <ArrowRight className="w-4 h-4" />
-                  </button>
+                  </span>
                 </div>
-              </div>
+              </a>
             ))
           ) : (
             <div className="col-span-full py-20 text-center">

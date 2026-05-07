@@ -149,7 +149,7 @@ export function Header({ intent, setIntent }: HeaderProps) {
             ) : (
               <>
                 <a 
-                  href="https://app.kairosng.com/auth/login"
+                  href="/login"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm font-medium text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white transition-colors cursor-pointer"

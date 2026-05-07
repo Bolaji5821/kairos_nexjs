@@ -63,7 +63,7 @@ export function CompanyLanding() {
                        </div>
                        <div className="flex items-center gap-2 pl-2 py-2 border border-zinc-100 dark:border-zinc-800 rounded-2xl bg-zinc-50 dark:bg-zinc-950/50">
                          <MapPin className="w-6 h-6 text-zinc-400 flex-shrink-0" />
-                         <select className="w-full bg-transparent border-none focus:ring-0 text-zinc-900 dark:text-black   placeholder:text-zinc-400 py-4 pr-8 cursor-pointer text-lg" defaultValue="">
+                         <select className="w-full bg-transparent border-none focus:ring-0 text-zinc-900 dark:text-white   placeholder:text-zinc-400 py-4 pr-8 cursor-pointer text-lg" defaultValue="">
                            <option value="">Anywhere</option>
                            <option value="remote">Remote</option>
                            <option value="europe">Europe</option>
